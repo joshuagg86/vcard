@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Presentación</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('bg.png');
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            font-family: "Comfortaa";
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            max-width: 350px;
+            width: 90%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .position {
+            font-size: 16px;
+            color: gray;
+        }
+        .bio {
+            margin: 20px 30px;
+            font-size: 14px;
+            padding-bottom: 20px;
+        }
+        .contact-info a {
+            display: block;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: medium;
+        }
+        .contact-info a:hover {
+            text-decoration: none;
+        }
+        .columna {
+            width:33%;
+            float:left;
+        }
+        .social {
+            padding-top: 40px;
+        }
+        @media (max-width: 500px) {
+  
+  .columna {
+    width:auto;
+    float:none;
+  }
+  
+        }
+        .logo {
+            margin-top: 20px;
+            width: 30%;
+        }
+        .back-info {
+            background-color: #f49a28;
+            color:white;
+            font-weight: bold;
+            padding:7px; 
+            border-radius:25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="perfil.jpg" alt="Foto de perfil" class="profile-img">
+        <div class="name">Joshua González</div>
+        <div class="position">Diseñador Web</div>
+        <p class="bio">En Digital Thinking, transformamos ideas en estrategias digitales efectivas que impulsan 
+            el crecimiento de tu negocio. Somos el aliado que necesitas para destacar en el mundo digital</p>
+        <div class="contact-info">
+            <a href="mailto:tuemail@example.com" class="back-info">joshua@dthinkng.com</a>
+            <a href="tel:+525585583889" class="back-info">55 8558 3889</a>
+        </div>
+        <div class="social">
+            <div class="columna">
+                <a href="url para redirección">
+                    <img src="ig.png"/>
+                </a>
+            </div>
+            <div class="columna">
+                <a href="url para redirección">
+                    <img src="fb.png"/>
+                </a>
+            </div>
+            <div class="columna">
+                <a href="url para redirección">
+                    <img src="web.png"/>
+                </a>
+            </div>
+        </div>
+        <img src="logo.png" alt="Foto de perfil" class="logo">
+    </div>
+</body>
+</html>
