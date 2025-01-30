@@ -52,9 +52,25 @@
             display: block;
             text-decoration: none;
             margin: 5px 0;
+            transition: transform 0.5s ease; /* Suaviza la animación del zoom */
+        }
+        .back-info:hover {
+            background-color: #f49a28;
+            color: white;
+            font-weight: bold;
+            padding: 7px;
+            border-radius: 25px;
+            display: block;
+            text-decoration: none;
+            margin: 5px 0;
+            transform: scale(1.03); /* Incrementa el tamaño al 120% */
         }
         .social img {
             width: 40px; /* Ajusta el tamaño de los iconos */
+            transition: transform 0.5s ease; /* Suaviza la animación del zoom */
+        }
+        .social:hover img {
+            transform: scale(1.2); /* Incrementa el tamaño al 120% */
         }
         .logo {
             width: 45%;
@@ -64,8 +80,8 @@
             font-size: 20px;
             color: #0e4f9e;
             font-weight: 700;
-            
         }
+        
     </style>
 </head>
 <body>
@@ -88,23 +104,23 @@
             </div>
 
             <!-- Redes sociales -->
-            <div class="social row justify-content-center mt-3">
-                <div class="col-3 d-flex justify-content-center">
+            <div class="row justify-content-center mt-3">
+                <div class="col-3 d-flex justify-content-center social">
                     <a href="https://wa.me/525585583889">
                         <img src="whatsapp.png" alt="whatsapp" class="img-fluid"/>
                     </a>
                 </div>
-                <div class="col-3 d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center social">
                     <a href="https://www.instagram.com/d.thinkng/">
                         <img src="ig.png" alt="Instagram" class="img-fluid"/>
                     </a>
                 </div>
-                <div class="col-3 d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center social">
                     <a href="https://www.facebook.com/d.thinkng">
                         <img src="fb.png" alt="Facebook" class="img-fluid"/>
                     </a>
                 </div>
-                <div class="col-3 d-flex justify-content-center">
+                <div class="col-3 d-flex justify-content-center social">
                     <a href="https://joshuagg86.github.io/DTW/">
                         <img src="web.png" alt="Página Web" class="img-fluid"/>
                     </a>
